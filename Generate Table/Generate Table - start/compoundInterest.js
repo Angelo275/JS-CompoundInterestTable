@@ -1,5 +1,3 @@
-// Write the code to generate table
-// This function generates a compound interest table.
 function generateTable(form) {
   var amount; // accumulated value for each new year
   var rate; // interest rate
@@ -15,7 +13,6 @@ function generateTable(form) {
     '<tr><th>Year</th><th>Starting Value</th>' +
     '<th>Interest Earned</th><th>Ending Value</th></tr>';
 
-// ---> Write your code here to generate the table and show it in the page
 while (year <= years){
   table += "<tr>";
   table += "<td>"+ year+ "</td>";
@@ -29,16 +26,4 @@ while (year <= years){
   }
   table += "</table>";
   document.getElementById("result").innerHTML =table;
-
-// function generateTable()
-// {
-//     deposit = document.getElementById("deposit").value;
-//     rate = document.getElementById("rate").value;
-//     years = document.getElementById("years").value;
-//     result = document.getElementById("result");
-    
-//     interest.innerHTML = (deposit*rate/100);
-//     result.innerHTML += deposit + interest;
-// }
-// }
-}// end generateTable
+}

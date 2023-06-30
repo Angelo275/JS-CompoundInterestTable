@@ -33,3 +33,7 @@ th {
 td {
   background-color: mistyrose;
 }
+
+div > input {
+  width: 100px;
+}
